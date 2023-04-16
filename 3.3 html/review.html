@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+      #nav{
+      width:400px;height:150px;
+      border:1px solid red;
+      /*这里设置背景的边框，边框一定要比div里所有内容的总和大，否则会垂直和乱排*/
+      margin:0 auto;
+      }
+      #nav ul{
+      }
+      #nav ul li{
+      /*这里设置整体序列里所有内容的条件，无序序列不要浮点、左悬、*/
+      list-style:none;
+      float:left;
+      margin-left:10px; /*两张图片并排时之间的距离*/
+      width:100px;   /*序列所在环境.也就是div的宽度和高度，一个宽高值对应一个图，不能比图小，会重叠*/
+      height:100px;
+      }
+      #nav ul li img{
+      width:100px; height:100px;} /*每个图片的宽度和高度，不能比div大，会重叠*/
+      #nav p {
+      }
+  </style>
+</head>
+<body>
+<div id="nav">
+    <ul>
+        <li>
+            <img src="image/01.jpg" alt="">
+        </li>
+        <li>
+            <img src="image/01.jpg" alt="">
+        </li>
+        <li>
+            <img src="image/01.jpg" alt="">
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>

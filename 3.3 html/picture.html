@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #title{
+    width:700px; height:20px; background-color:blue;/*设置背景的条件*/
+    margin:0 auto;/*让背景在整个页面中水平居中*/
+    }
+    #title li{
+    color:white;width:150px;height:20px; background-color:blue;float:left;
+    list-style:none;
+    /*设置字体的条件；
+    float:left 让插入内容能浮于一层并横向排列，但是要计算一行之内所有单个内容的整体宽度和高度，不能超出背景；
+    list-style:none;这里的列表属于无序列表，默认在每个数据前加浮点，因此要去掉格式*/
+    margin:0 auto;}/*让字体在背景中水平剧中*/
+  </style>
+</head>
+<body>
+<div id="title">
+    <li>首&nbsp;&nbsp;&nbsp;&nbsp;页</li>
+    <li>简&nbsp;&nbsp;&nbsp;&nbsp;介</li>
+    <li>作&nbsp;品&nbsp;展&nbsp;示</li>
+    <li>招&nbsp;&nbsp;&nbsp;&nbsp;生</li>
+
+</div>
+
+</body>
+</html>
